@@ -154,6 +154,6 @@ public class TaxServiceTests : ServiceTest
     {
         var result = await _taxService.GetVatNumberStatusAsync(vatNumber);
 
-        result.VatNumberStatus.Should().Be(canBeStatus);
+        result.vatNumberStatus.Should().Be(canBeStatus);
     }
 }
